@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 03:08:26 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODIxOzIwMjYtMDQtMTQ7IjAyOjM0OjE4ICI7Mjg1NA=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODIxOzIwMjYtMDQtMTQ7IjAzOjA4OjI2ICI7MTsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="compra" type="Real" array="False" size=""/>
+            <declare name="vip, cupom, parcelas" type="String" array="False" size=""/>
+            <output expression="&quot;Vamos conferir se h&#225; desconto&quot;" newline="True"/>
+            <output expression="&quot;Informe o valor da sua compra&quot;" newline="True"/>
+            <input variable="Compra"/>
+            <output expression="&quot;Voc&#234; &#233; cliente VIP?&quot;" newline="True"/>
+            <input variable="VIP"/>
+            <output expression="&quot;Voc&#234; tem cupom de desconto?&quot;" newline="True"/>
+            <input variable="cupom"/>
+            <output expression="&quot;Voc&#234; possui parcelas atrasadas?&quot;" newline="True"/>
+            <input variable="parcelas"/>
+            <if expression="vip=&quot;sim&quot; and compra&gt;500 or (cupom=&quot;sim&quot; and parcelas=&quot;n&#227;o&quot;)">
+                <then>
+                    <output expression="&quot;O Super desconto ser&#225; aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O super desconto n&#227;o ser&#225; aprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
