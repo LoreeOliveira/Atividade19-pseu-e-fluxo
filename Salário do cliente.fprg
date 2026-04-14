@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 02:04:28 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwNzgxOzIwMjYtMDQtMTQ7IjAxOjM1OjU3ICI7Mjg2Mg=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwNzgxOzIwMjYtMDQtMTQ7IjAyOjA0OjI4ICI7MTsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <declare name="serasa, fiador" type="String" array="False" size=""/>
+            <output expression="&quot;informe seu sal&#225;rio para ver se o empr&#233;stimo &#233; aprovado&quot;" newline="True"/>
+            <input variable="salario"/>
+            <output expression="&quot;Voc&#234; possui fiador? (s/n)&quot;" newline="True"/>
+            <input variable="fiador"/>
+            <output expression="&quot;Voc&#234; possui nome sujo no serasa?(s/n)&quot;" newline="True"/>
+            <input variable="serasa"/>
+            <if expression="(serasa = &quot;s&quot;)">
+                <then>
+                    <output expression="&quot;Voc&#234; n&#227;o foi aceito para fazer empr&#233;stimo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(salario &gt; 2000) or (fiador = &quot;s&quot;)">
+                        <then>
+                            <output expression="&quot;Voc&#234; foi aceito para fazer o empr&#233;stimo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voc&#234; n&#227;o foi aceito para fazer empr&#233;stimo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
